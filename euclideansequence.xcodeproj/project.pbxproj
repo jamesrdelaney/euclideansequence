@@ -12,7 +12,55 @@
 		18447D321D3A6ED10066AE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18447D301D3A6ED10066AE73 /* Main.storyboard */; };
 		18447D341D3A6ED10066AE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18447D331D3A6ED10066AE73 /* Assets.xcassets */; };
 		18447D371D3A6ED10066AE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18447D351D3A6ED10066AE73 /* LaunchScreen.storyboard */; };
+		18447D4C1D3A73360066AE73 /* MIKMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18447D491D3A72ED0066AE73 /* MIKMIDI.framework */; };
+		18447D4D1D3A73360066AE73 /* MIKMIDI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18447D491D3A72ED0066AE73 /* MIKMIDI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18447D541D3AB37A0066AE73 /* MidiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18447D531D3AB37A0066AE73 /* MidiController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18447D461D3A72ED0066AE73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D74EEA517A7129300BEE89F;
+			remoteInfo = MIKMIDI;
+		};
+		18447D481D3A72ED0066AE73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DAF8B061A7AFF1100F46528;
+			remoteInfo = "MIKMIDI-iOS";
+		};
+		18447D4A1D3A72ED0066AE73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D4DF13A1AAB57430065F004;
+			remoteInfo = "MIKMIDI Tests";
+		};
+		18447D4E1D3A73360066AE73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DAF8B051A7AFF1100F46528;
+			remoteInfo = "MIKMIDI-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18447D501D3A73360066AE73 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18447D4D1D3A73360066AE73 /* MIKMIDI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18447D291D3A6ED10066AE73 /* euclideansequence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = euclideansequence.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +70,10 @@
 		18447D331D3A6ED10066AE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18447D361D3A6ED10066AE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18447D381D3A6ED10066AE73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MIKMIDI.xcodeproj; path = Frameworks/MIKMIDI/Framework/MIKMIDI.xcodeproj; sourceTree = "<group>"; };
+		18447D521D3AB37A0066AE73 /* euclideansequence-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "euclideansequence-Bridging-Header.h"; sourceTree = "<group>"; };
+		18447D531D3AB37A0066AE73 /* MidiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiController.m; sourceTree = "<group>"; };
+		18447D551D3AB3AA0066AE73 /* MidiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18447D4C1D3A73360066AE73 /* MIKMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +91,7 @@
 		18447D201D3A6ED10066AE73 = {
 			isa = PBXGroup;
 			children = (
+				18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */,
 				18447D2B1D3A6ED10066AE73 /* euclideansequence */,
 				18447D2A1D3A6ED10066AE73 /* Products */,
 			);
@@ -60,8 +114,21 @@
 				18447D331D3A6ED10066AE73 /* Assets.xcassets */,
 				18447D351D3A6ED10066AE73 /* LaunchScreen.storyboard */,
 				18447D381D3A6ED10066AE73 /* Info.plist */,
+				18447D531D3AB37A0066AE73 /* MidiController.m */,
+				18447D521D3AB37A0066AE73 /* euclideansequence-Bridging-Header.h */,
+				18447D551D3AB3AA0066AE73 /* MidiController.h */,
 			);
 			path = euclideansequence;
+			sourceTree = "<group>";
+		};
+		18447D411D3A72EC0066AE73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18447D471D3A72ED0066AE73 /* MIKMIDI.framework */,
+				18447D491D3A72ED0066AE73 /* MIKMIDI.framework */,
+				18447D4B1D3A72ED0066AE73 /* MIKMIDI Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +141,12 @@
 				18447D251D3A6ED10066AE73 /* Sources */,
 				18447D261D3A6ED10066AE73 /* Frameworks */,
 				18447D271D3A6ED10066AE73 /* Resources */,
+				18447D501D3A73360066AE73 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18447D4F1D3A73360066AE73 /* PBXTargetDependency */,
 			);
 			name = euclideansequence;
 			productName = euclideansequence;
@@ -96,6 +165,7 @@
 				TargetAttributes = {
 					18447D281D3A6ED10066AE73 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W6WLZ6KWMX;
 					};
 				};
 			};
@@ -110,12 +180,42 @@
 			mainGroup = 18447D201D3A6ED10066AE73;
 			productRefGroup = 18447D2A1D3A6ED10066AE73 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18447D411D3A72EC0066AE73 /* Products */;
+					ProjectRef = 18447D401D3A72EC0066AE73 /* MIKMIDI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18447D281D3A6ED10066AE73 /* euclideansequence */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18447D471D3A72ED0066AE73 /* MIKMIDI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MIKMIDI.framework;
+			remoteRef = 18447D461D3A72ED0066AE73 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18447D491D3A72ED0066AE73 /* MIKMIDI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MIKMIDI.framework;
+			remoteRef = 18447D481D3A72ED0066AE73 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18447D4B1D3A72ED0066AE73 /* MIKMIDI Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MIKMIDI Tests.xctest";
+			remoteRef = 18447D4A1D3A72ED0066AE73 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18447D271D3A6ED10066AE73 /* Resources */ = {
@@ -137,10 +237,19 @@
 			files = (
 				18447D2F1D3A6ED10066AE73 /* ViewController.swift in Sources */,
 				18447D2D1D3A6ED10066AE73 /* AppDelegate.swift in Sources */,
+				18447D541D3AB37A0066AE73 /* MidiController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18447D4F1D3A73360066AE73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MIKMIDI-iOS";
+			targetProxy = 18447D4E1D3A73360066AE73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18447D301D3A6ED10066AE73 /* Main.storyboard */ = {
@@ -249,10 +358,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = euclideansequence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.delaneydesign.euclideansequence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "euclideansequence/euclideansequence-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +375,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = euclideansequence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.delaneydesign.euclideansequence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "euclideansequence/euclideansequence-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +406,7 @@
 				18447D3D1D3A6ED10066AE73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
